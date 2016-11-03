@@ -1,0 +1,44 @@
+{
+  "name": "nodecg-recentfollower",
+  "version": "0.0.0",
+  "description": "Shows your most recent follower",
+  "homepage": "https://gamemak.in",
+  "author": {
+    "name": "Michael Allar",
+    "email": "allar@michaelallar.com",
+    "url": "http://allarsblog.com"
+  },
+  "files": [
+    "dashboard",
+    "graphics",
+    "extension.js",
+    "extension"
+  ],
+  "keywords": [
+    "most",
+    "recent",
+    "follower",
+    "nodecg-bundle"
+  ],
+  "nodecg": {
+    "compatibleRange": "~0.8.0",
+    "dashboardPanels": [
+      {
+        "name": "recent-follower",
+        "title": "Recent Follower",
+        "width": 2,
+        "file": "recent-follower.html",
+        "headerColor": "#9f9bbd"
+      }
+    ],
+    "graphics": [
+      {
+        "file": "index.html",
+        "width": 600,
+        "height": 81
+      }
+    ]
+  },
+  "repository": "https://github.com/nodecg/nodecg.git",
+  "license": "MIT"
+}
