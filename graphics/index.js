@@ -7,6 +7,11 @@ nodecg.listenFor('channel-followed', 'nodecg-beam-service', function(user) {
     RecentFollower.value = user.username;
 });
 
+nodecg.listenFor('channel-followed', 'nodecg-twitch-service', function(user) {
+    RecentFollower.value = user.display_name;
+});
+
+
 var alertBox = document.getElementById('alert');
 alertBox.addEventListener('webkitAnimationEnd', function(){
     this.style.webkitAnimationName = '';
